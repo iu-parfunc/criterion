@@ -40,7 +40,7 @@ import Data.Vector (Vector)
 import Statistics.Resampling.Bootstrap (Estimate(..))
 import System.Directory (getTemporaryDirectory, removeFile)
 import System.IO (IOMode(..), SeekMode(..), hClose, hSeek, openBinaryFile,
-                  openBinaryTempFile)
+                  openBinaryTempFile, hPutStr, openTempFile, openFile)
 import Text.Printf (printf)
 
 -- | Run a single benchmark.
